@@ -14,7 +14,7 @@ set shiftwidth=4
 "set autoindent
 
 " インデントはスマートインデント
-"set smarttab
+set smarttab
 
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
 set ignorecase
@@ -59,6 +59,9 @@ highlight SpellErrors guifg=Red ctermbg=Red cterm=none
 if has("autochdir")
     set autochdir
 endif
+
+" Zen-Coding の実行キーを<C-e>に変更
+let g:user_zen_expandabbr_key = '<c-e>'
 
 " bundle ------------------------------
 set runtimepath+=~/.vim/bundle/neobundle.vim/
