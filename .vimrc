@@ -9,6 +9,11 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+au BufNewFile,BufRead *.html set tabstop=2 softtabstop=2 shiftwidth=2
+
+"タブ、空白、改行の可視化
+set list
+set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
 
 " 自動インデント
 "set autoindent
@@ -76,7 +81,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/vimproc'
 let g:vimfiler_as_default_explorer=1
-autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
+"autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
 let g:vimfiler_edit_action = 'tabopen'
 
 " コード補完＆補助
