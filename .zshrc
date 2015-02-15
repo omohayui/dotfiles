@@ -5,7 +5,7 @@
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
-export PATH=/usr/local:$PATH
+export PATH=/usr/local/bin:/usr/local:$PATH
  
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -16,6 +16,7 @@ export EDITOR=vim
 bindkey -v
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -g "$@"'
+alias gitdiff='git difftool --tool=vimdiff --no-prompt'
  
 # ヒストリの設定
 HISTFILE=~/.zsh_history
@@ -160,3 +161,5 @@ case ${OSTYPE} in
 esac
  
 # vim:set ft=zsh:
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
