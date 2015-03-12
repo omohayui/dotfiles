@@ -1,3 +1,7 @@
+" backupfile
+set backupdir=~/.vim/tmp
+set noundofile
+
 " 色つけをする
 syntax on
 
@@ -42,6 +46,7 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 " マウス使う
 set mouse=a
 set ttymouse=xterm2
+set clipboard+=unnamed
 
 " インクリメンタルサーチ
 set incsearch
