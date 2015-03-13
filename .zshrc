@@ -17,6 +17,7 @@ bindkey -v
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -g "$@"'
 alias gitdiff='git difftool --tool=vimdiff --no-prompt'
+alias gitlog='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s" --all --date=short'
  
 # ヒストリの設定
 export HISTFILE=~/.zsh_history
