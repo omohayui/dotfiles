@@ -23,6 +23,9 @@ alias gitlog='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an]
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
+setopt EXTENDED_HISTORY
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
 alias history='history -E 1'
 
 # プロンプト
@@ -119,6 +122,7 @@ setopt extended_glob
 # ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey "^s" history-incremental-pattern-search-forward
+bindkey -e
  
 ########################################
 # エイリアス
