@@ -189,3 +189,11 @@ expect {
 "
 source $HOME/perl5/perlbrew/etc/bashrc
 source $HOME/perl5/perlbrew/etc/perlbrew-completion.bash
+
+function cdup() {
+    echo
+    cd ..
+    zle reset-prompt
+}
+zle -N cdup
+bindkey '^\^' cdup
