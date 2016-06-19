@@ -1,0 +1,18 @@
+defutf8 on
+defencoding utf8
+encoding utf-8 utf-8
+
+bind x
+bind ^x
+
+startup_message off
+autodetach on
+vbell off
+
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+shelltitle "$ |shell"
+
+defscrollback 10240
+termcapinfo xterm* ti@:te@
+
+shell /usr/local/bin/zsh
