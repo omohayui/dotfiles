@@ -187,8 +187,21 @@ expect {
     eof { exit 0 }
 }
 "
+
+GITHUB_KEY_FILENAME=''
+ssh-add $HOME/.ssh/$GITHUB_KEY_FILENAME
+
 source $HOME/perl5/perlbrew/etc/bashrc
 source $HOME/perl5/perlbrew/etc/perlbrew-completion.bash
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+export HUBOT_GOOGLE_CSE_ID=
+export HUBOT_GOOGLE_CSE_KEY=
 
 function cdup() {
     echo
@@ -197,3 +210,5 @@ function cdup() {
 }
 zle -N cdup
 bindkey '^\^' cdup
+
+eval "$(direnv hook zsh)"

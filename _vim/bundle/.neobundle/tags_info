@@ -1,6 +1,6 @@
 emmet-vim
 neobundle.vim
-neocomplete
+neocomplcache
 nerdtree
 unite.vim
 vim-easymotion
