@@ -14,7 +14,7 @@ set noundofile
 set tabstop=2
 set shiftwidth=4
 set expandtab
-au BufNewFile,BufRead *.html,*.erb,*.scss set tabstop=2 softtabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.html,*.erb,*.scss,*.js set tabstop=2 softtabstop=2 shiftwidth=2
 set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
 set mouse=
