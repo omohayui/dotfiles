@@ -1,4 +1,6 @@
 emmet-vim
+lightline.vim
+molokai
 neobundle.vim
 neocomplete
 nerdtree

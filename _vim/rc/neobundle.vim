@@ -1,12 +1,15 @@
-if has('vim_starting')
-	set nocompatible               " Be iMproved
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
 
-	" Required:
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+set runtimepath+=/Users/yui.takeuchi/dotfiles/_vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/Users/yui.takeuchi/dotfiles/_vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -20,6 +23,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'tomasr/molokai'
 
 call neobundle#end()
 
