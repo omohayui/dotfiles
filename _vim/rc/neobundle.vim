@@ -6,10 +6,10 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/yui.takeuchi/dotfiles/_vim/bundle/neobundle.vim/
+set runtimepath+=~/dotfiles/_vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('/Users/yui.takeuchi/dotfiles/_vim/bundle/'))
+call neobundle#begin(expand('~/dotfiles/_vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
