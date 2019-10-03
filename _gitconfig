@@ -1,0 +1,9 @@
+[user]
+	email = omohayui@gmail.com
+	name = omohayui
+[core]
+	editor = vim
+[alias]
+	st = status -s
+	co = checkout
+	wd = diff --word-diff=color

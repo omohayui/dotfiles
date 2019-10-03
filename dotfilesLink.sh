@@ -2,3 +2,4 @@
 ln -sf ~/dotfiles/_vimrc ~/.vimrc
 ln -sf ~/dotfiles/_gvimrc ~/.gvimrc
 ln -sf ~/dotfiles/_zshrc ~/.zshrc
+ln -sf ~/dotfiles/_gitconfig ~/.gitconfig
