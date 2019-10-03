@@ -23,6 +23,8 @@ set nobackup
 set spell
 set spelllang=en,cjk
 syntax on
+nnoremap ; :
+nnoremap  <C-c><C-c> :<C-u>nohlsearch<cr><Esc>
 
 " 各種設定読み込みメソッド
 function s:load_rc(file)
