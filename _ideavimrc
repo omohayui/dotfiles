@@ -1,0 +1,5 @@
+nnoremap ; :
+nnoremap  <C-c><C-c> :<C-u>nohlsearch<cr><Esc>
+
+" for only ideavim
+nnoremap gd :action GotoDeclaration<CR>
