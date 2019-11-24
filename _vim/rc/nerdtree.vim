@@ -3,6 +3,9 @@ let NERDTreeShowHidden = 1
 " キーマップ。（ctrl+nで起動できるように）
 map <C-n> :NERDTreeToggle<CR>
 
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
     exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
@@ -23,3 +26,4 @@ call NERDTreeHighlightFile('rb', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('pm', 'Magenta', 'none', '#ff00ff', '#151515')
 call NERDTreeHighlightFile('pl', 'Magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('go', 'Magenta', 'none', '#ff00ff', '#151515')

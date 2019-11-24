@@ -1,4 +1,4 @@
-if neobundle#is_installed('neocomplete')
+if neobundle#is_installed('neocomplete.vim')
     " neocomplete用設定
     let g:neocomplete#enable_at_startup = 1
     let g:neocomplete#enable_ignore_case = 1
@@ -21,3 +21,4 @@ elseif neobundle#is_installed('neocomplcache')
 endif
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+

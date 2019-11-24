@@ -13,16 +13,15 @@ call neobundle#begin(expand('~/dotfiles/_vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'Shougo/vimproc.vim', {'build': { 'unix': 'make -f make_unix.mak' } }
+"NeoBundle 'Shougo/vimproc.vim', {'build': { 'unix': 'make -f make_unix.mak' } }
 
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
+NeoBundle has('lua') ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tomasr/molokai'
 

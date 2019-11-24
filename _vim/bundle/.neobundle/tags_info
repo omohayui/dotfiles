@@ -2,8 +2,6 @@ emmet-vim
 lightline.vim
 molokai
 neobundle.vim
-neocomplete
+neocomplete.vim
 nerdtree
 unite.vim
-vim-easymotion
-vimproc.vim

@@ -32,10 +32,8 @@ function s:load_rc(file)
 endfunction
 
 call s:load_rc('neobundle')
-call s:load_rc('nmaps')
 call s:load_rc('nerdtree')
 call s:load_rc('lightline')
-call s:load_rc('easymotion')
 call s:load_rc('unite')
 call s:load_rc('neocompl')
 call s:load_rc('molokai')
