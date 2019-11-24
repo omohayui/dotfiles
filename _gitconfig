@@ -7,3 +7,5 @@
 	st = status -s
 	co = checkout
 	wd = diff --word-diff=color
+[url "git@github.com:"]
+	insteadOf = https://github.com/
