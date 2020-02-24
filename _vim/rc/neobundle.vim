@@ -28,7 +28,6 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/unite.vim'
 NeoBundle has('lua') ? 'Shougo/neocomplete.vim' : 'Shougo/neocomplcache'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tomasr/molokai'
