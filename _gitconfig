@@ -3,9 +3,21 @@
 	name = omohayui
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [alias]
 	st = status -s
 	co = checkout
 	wd = diff --word-diff=color
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[merge]
+	ff = false
+[pull]
+	ff = only
+[commit]
+	gpgsign = true
