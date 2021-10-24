@@ -220,3 +220,10 @@ export PATH=$HOME/flutter/bin:$PATH
 # node
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+# private settings
+if [ -f ~/.zsh/zsh_private ]; then
+    source ~/.zsh/zsh_private
+else
+    print "404: ~/.zsh/zsh_private not found."
+fi
